@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/dat-lich", "destination": "/dat-lich.html" }
+  ]
+}
