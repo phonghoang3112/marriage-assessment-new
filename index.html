@@ -46,14 +46,19 @@
       </span>
     </a>
     <nav class="site-nav" aria-label="Điều hướng nhanh">
-      <a class="nav-btn" href="#dau-hieu">Những dấu hiệu</a>
-      <a class="nav-btn" href="#buoi">Phiên làm việc</a>
-      <a class="nav-btn" href="#chuyen-gia">Chuyên gia</a>
-      <a class="nav-btn" href="#dat">Chi phí</a>
-      <a class="nav-btn" href="#faq">Hỏi đáp</a>
+      <a class="nav-btn" href="#dau-hieu" data-i18n="nav.signs">Những dấu hiệu</a>
+      <a class="nav-btn" href="#buoi" data-i18n="nav.session">Phiên làm việc</a>
+      <a class="nav-btn" href="#chuyen-gia" data-i18n="nav.coaches">Chuyên gia</a>
+      <a class="nav-btn" href="#dat" data-i18n="nav.pricing">Chi phí</a>
+      <a class="nav-btn" href="#faq" data-i18n="nav.faq">Hỏi đáp</a>
     </nav>
     <div class="site-header__actions">
-      <a class="btn btn--sm" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking">Đặt lịch</a>
+      <div class="lang-switch" role="group" aria-label="Chọn ngôn ngữ / Select language">
+        <button type="button" class="lang-btn is-active" data-lang="vi" aria-pressed="true" title="Tiếng Việt">VI</button>
+        <span class="lang-divider" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" title="English">EN</button>
+      </div>
+      <a class="btn btn--sm" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking" data-i18n="nav.book">Đặt lịch</a>
     </div>
   </header>
 </div>
@@ -66,28 +71,28 @@
     <div class="frame__scrim" aria-hidden="true"></div>
     <div class="container">
       <div class="masthead">
-        <span class="label">Toàn Vẹn · Buổi Nhìn Rõ</span>
+        <span class="label" data-i18n="hero.label">Toàn Vẹn · Buổi Nhìn Rõ</span>
         <span class="folio">N°01</span>
       </div>
       <div class="hero__row">
         <div class="glass hero__panel">
-          <p class="label">Dành cho em, khi đang đứng giữa giữ và buông</p>
-          <h1 class="display">Em không chắc mình có muốn ly hôn không. Em chỉ biết là <em>không thể sống mãi</em> như thế này được nữa.</h1>
-          <p class="lead">Có những điều em chưa nói được với ai.<br>Ở Buổi Nhìn Rõ, em được chia sẻ hết, không ai phán xét.<br>Và em sẽ biết chuyện gì đang thực sự xảy ra trong cuộc hôn nhân của mình, trước khi quyết định giữ hay buông.</p>
+          <p class="label" data-i18n="hero.sub">Dành cho em, khi đang đứng giữa giữ và buông</p>
+          <h1 class="display" data-i18n-html="hero.title">Em không chắc mình có muốn ly hôn không. Em chỉ biết là <em>không thể sống mãi</em> như thế này được nữa.</h1>
+          <p class="lead" data-i18n-html="hero.lead">Có những điều em chưa nói được với ai.<br>Ở Buổi Nhìn Rõ, em được chia sẻ hết, không ai phán xét.<br>Và em sẽ biết chuyện gì đang thực sự xảy ra trong cuộc hôn nhân của mình, trước khi quyết định giữ hay buông.</p>
           <div class="chips">
-            <span class="chip">2 tiếng</span>
-            <span class="chip">Online</span>
-            <span class="chip">Với chị Mai Khôi hoặc chị Minh Ngọc</span>
-            <span class="chip">Đi một mình hoặc cùng chồng</span>
+            <span class="chip" data-i18n="hero.chip1">2 tiếng</span>
+            <span class="chip" data-i18n="hero.chip2">Online</span>
+            <span class="chip" data-i18n="hero.chip3">Với chị Mai Khôi hoặc chị Minh Ngọc</span>
+            <span class="chip" data-i18n="hero.chip4">Đi một mình hoặc cùng chồng</span>
           </div>
           <div class="cta-row">
-            <a class="btn" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking">Đặt lịch Buổi Nhìn Rõ</a>
+            <a class="btn" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking" data-i18n="hero.cta">Đặt lịch Buổi Nhìn Rõ</a>
             <div class="hero-channels">
-              <a class="link" href="https://zalo.me/1561809299319416611" target="_blank" rel="noopener" data-track="zalo">Nhắn Zalo OA</a>
+              <a class="link" href="https://zalo.me/1561809299319416611" target="_blank" rel="noopener" data-track="zalo" data-i18n="hero.zalo">Nhắn Zalo OA</a>
               <span class="sep" aria-hidden="true">·</span>
-              <a class="link" href="https://www.facebook.com/toitoanven" target="_blank" rel="noopener">Facebook</a>
+              <a class="link" href="https://www.facebook.com/toitoanven" target="_blank" rel="noopener" data-i18n="hero.fb">Facebook</a>
               <span class="sep" aria-hidden="true">·</span>
-              <a class="link" href="mailto:toanveninstitute@gmail.com">Gửi Email</a>
+              <a class="link" href="mailto:toanveninstitute@gmail.com" data-i18n="hero.email">Gửi Email</a>
             </div>
           </div>
         </div>
@@ -104,45 +109,45 @@
     <div class="frame__scrim" aria-hidden="true"></div>
     <div class="container">
       <div class="masthead">
-        <span class="label">Bốn dấu hiệu</span>
+        <span class="label" data-i18n="signs.masthead">Bốn dấu hiệu</span>
         <span class="folio">N°02</span>
       </div>
-      <h2 class="h2" style="max-width: 760px">Em có thấy <em>mình</em> trong những điều này không?</h2>
+      <h2 class="h2" style="max-width: 760px" data-i18n-html="signs.title">Em có thấy <em>mình</em> trong những điều này không?</h2>
       <div class="glass">
         <div class="signs">
           <article class="sign">
             <img class="photo" src="assets/img/pillar-1-chong-chenh.webp" width="480" height="600" loading="lazy" alt="Người phụ nữ ngồi bên mép giường trong nắng chiều">
             <div>
-              <p class="label">Chông chênh</p>
-              <p class="serif">Sáng nghĩ “thôi, đủ rồi”. Đến trưa lại sợ buông tay quá sớm, rồi cả đời tự hỏi “giá như”.</p>
+              <p class="label" data-i18n="signs.s1.title">Chông chênh</p>
+              <p class="serif" data-i18n="signs.s1.desc">Sáng nghĩ “thôi, đủ rồi”. Đến trưa lại sợ buông tay quá sớm, rồi cả đời tự hỏi “giá như”.</p>
             </div>
           </article>
           <article class="sign">
             <img class="photo" src="assets/img/pillar-2-kiet-suc.webp" width="480" height="600" loading="lazy" alt="Đôi tay mệt mỏi bên tách trà đã nguội">
             <div>
-              <p class="label">Kiệt sức</p>
-              <p class="serif">Nói cũng nói rồi, im cũng im rồi, nhịn cũng nhịn rồi. Mọi thứ vẫn vậy.</p>
+              <p class="label" data-i18n="signs.s2.title">Kiệt sức</p>
+              <p class="serif" data-i18n="signs.s2.desc">Nói cũng nói rồi, im cũng im rồi, nhịn cũng nhịn rồi. Mọi thứ vẫn vậy.</p>
             </div>
           </article>
           <article class="sign">
             <img class="photo" src="assets/img/pillar-3-mot-minh.webp" width="480" height="600" loading="lazy" alt="Người phụ nữ đứng một mình ngoài ban công lúc chạng vạng">
             <div>
-              <p class="label">Một mình</p>
-              <p class="serif">Có quá nhiều điều trong lòng mà không biết chia sẻ với ai. Người thân thì thương em quá, khó mà đứng ngoài.</p>
+              <p class="label" data-i18n="signs.s3.title">Một mình</p>
+              <p class="serif" data-i18n="signs.s3.desc">Có quá nhiều điều trong lòng mà không biết chia sẻ với ai. Người thân thì thương em quá, khó mà đứng ngoài.</p>
             </div>
           </article>
           <article class="sign">
             <img class="photo" src="assets/img/pillar-4-can-nhin-ro.webp" width="480" height="600" loading="lazy" alt="Bàn tay vén rèm cho nắng chiều tràn vào">
             <div>
-              <p class="label">Cần nhìn rõ</p>
-              <p class="serif">Chỉ mong có ai đó đứng ngoài nhìn vào và cho mình biết: cuộc hôn nhân này còn cứu được không?</p>
+              <p class="label" data-i18n="signs.s4.title">Cần nhìn rõ</p>
+              <p class="serif" data-i18n="signs.s4.desc">Chỉ mong có ai đó đứng ngoài nhìn vào và cho mình biết: cuộc hôn nhân này còn cứu được không?</p>
             </div>
           </article>
         </div>
       </div>
       <div class="after-panel">
-        <p>Nếu em thấy mình trong dù chỉ một điều, Buổi Nhìn Rõ là dành cho em.</p>
-        <a class="link" href="#buoi">Xem 2 tiếng đó diễn ra thế nào</a>
+        <p data-i18n="signs.after">Nếu em thấy mình trong dù chỉ một điều, Buổi Nhìn Rõ là dành cho em.</p>
+        <a class="link" href="#buoi" data-i18n="signs.link">Xem 2 tiếng đó diễn ra thế nào</a>
       </div>
     </div>
   </section>
@@ -153,32 +158,32 @@
     <div class="frame__scrim" aria-hidden="true"></div>
     <div class="container">
       <div class="masthead">
-        <span class="label">Trong 2 tiếng</span>
+        <span class="label" data-i18n="session.masthead">Trong 2 tiếng</span>
         <span class="folio">N°03</span>
       </div>
       <div class="glass session">
         <div class="session__col">
-          <h2 class="h2">2 tiếng để em <em>chia sẻ hết</em></h2>
-          <p class="lead">Em kể câu chuyện của mình, theo cách của em.<br>Coach lắng nghe, không phán xét, không bênh ai.<br>Rồi chị hỏi em những câu mà người thân không hỏi được, vì họ quá thương em.</p>
-          <p class="serif-line">Khi đang ở trong nỗi đau, rất khó để tự mình nhìn rõ. Em cần một người đứng ngoài.</p>
+          <h2 class="h2" data-i18n-html="session.title">2 tiếng để em <em>chia sẻ hết</em></h2>
+          <p class="lead" data-i18n-html="session.lead">Em kể câu chuyện của mình, theo cách của em.<br>Coach lắng nghe, không phán xét, không bênh ai.<br>Rồi chị hỏi em những câu mà người thân không hỏi được, vì họ quá thương em.</p>
+          <p class="serif-line" data-i18n="session.serif">Khi đang ở trong nỗi đau, rất khó để tự mình nhìn rõ. Em cần một người đứng ngoài.</p>
         </div>
         <div class="session__col">
-          <p class="label" style="margin-bottom: 6px">Mình cùng nhìn vào ba câu hỏi</p>
+          <p class="label" style="margin-bottom: 6px" data-i18n="session.q_label">Mình cùng nhìn vào ba câu hỏi</p>
           <div class="q">
             <span class="q__num">01</span>
-            <div><h3>Chuyện gì đã thực sự xảy ra?</h3><p>Hai người đã đi đến hôm nay bằng cách nào, và mỗi người đã cần gì mà không nhận được.</p></div>
+            <div><h3 data-i18n="session.q1.title">Chuyện gì đã thực sự xảy ra?</h3><p data-i18n="session.q1.desc">Hai người đã đi đến hôm nay bằng cách nào, và mỗi người đã cần gì mà không nhận được.</p></div>
           </div>
           <div class="q">
             <span class="q__num">02</span>
-            <div><h3>Giữa hai người còn lại những gì?</h3><p>Sự tôn trọng, sự quan tâm, tình nghĩa, niềm tin. Đôi khi chúng vẫn còn đó, chỉ bị nỗi đau che mất.</p></div>
+            <div><h3 data-i18n="session.q2.title">Giữa hai người còn lại những gì?</h3><p data-i18n="session.q2.desc">Sự tôn trọng, sự quan tâm, tình nghĩa, niềm tin. Đôi khi chúng vẫn còn đó, chỉ bị nỗi đau che mất.</p></div>
           </div>
           <div class="q">
             <span class="q__num">03</span>
-            <div><h3>Hai người còn đủ sức để làm lại không?</h3><p>Mỗi người có còn đủ sức để chữa lành, mềm lại, và cùng nhau bắt đầu lại không.</p></div>
+            <div><h3 data-i18n="session.q3.title">Hai người còn đủ sức để làm lại không?</h3><p data-i18n="session.q3.desc">Mỗi người có còn đủ sức để chữa lành, mềm lại, và cùng nhau bắt đầu lại không.</p></div>
           </div>
-          <p class="label" style="margin: 32px 0 6px">Em ra về với</p>
-          <p class="row">Ghi chép của chị: những điều chị nhìn thấy, và những điều còn chưa rõ.</p>
-          <p class="row">Chị cho em biết thẳng bước tiếp theo nên là gì. Nếu em không cần thêm gì nữa, chị cũng sẽ nói thật.</p>
+          <p class="label" style="margin: 32px 0 6px" data-i18n="session.takeaway_label">Em ra về với</p>
+          <p class="row" data-i18n="session.takeaway1">Ghi chép của chị: những điều chị nhìn thấy, và những điều còn chưa rõ.</p>
+          <p class="row" data-i18n="session.takeaway2">Chị cho em biết thẳng bước tiếp theo nên là gì. Nếu em không cần thêm gì nữa, chị cũng sẽ nói thật.</p>
         </div>
       </div>
     </div>
@@ -187,16 +192,16 @@
   <!-- PROMISE BAND -->
   <section class="plain">
     <div class="surface">
-      <h2 class="h2 h2--sm" style="margin-bottom: 32px">Toàn Vẹn sẽ <em>không</em></h2>
+      <h2 class="h2 h2--sm" style="margin-bottom: 32px" data-i18n-html="promise.title">Toàn Vẹn sẽ <em>không</em></h2>
       <div class="nots">
-        <p>Khuyên em cố giữ bằng mọi giá.</p>
-        <p>Khuyên em ly hôn.</p>
-        <p>Bênh em để trách chồng.</p>
-        <p>Mời em thêm những buổi em không cần.</p>
+        <p data-i18n="promise.p1">Khuyên em cố giữ bằng mọi giá.</p>
+        <p data-i18n="promise.p2">Khuyên em ly hôn.</p>
+        <p data-i18n="promise.p3">Bênh em để trách chồng.</p>
+        <p data-i18n="promise.p4">Mời em thêm những buổi em không cần.</p>
       </div>
       <div class="promise">
         <span class="promise__rule" aria-hidden="true"></span>
-        <p>Giữ hay buông là quyết định của em. Việc của Toàn Vẹn là giúp em nhìn cho rõ.</p>
+        <p data-i18n="promise.footer">Giữ hay buông là quyết định của em. Việc của Toàn Vẹn là giúp em nhìn cho rõ.</p>
       </div>
     </div>
   </section>
@@ -207,32 +212,32 @@
     <div class="frame__scrim" aria-hidden="true"></div>
     <div class="container">
       <div class="masthead">
-        <span class="label">Người đồng hành</span>
+        <span class="label" data-i18n="coaches.masthead">Người đồng hành</span>
         <span class="folio">N°04</span>
       </div>
-      <h2 class="h2">Ai sẽ <em>ngồi cùng</em> em?</h2>
-      <p class="coaches__intro">Em sẽ làm việc riêng với một trong hai chị. Nếu em chưa biết chọn ai, Toàn Vẹn sẽ sắp xếp người phù hợp với câu chuyện của em.</p>
+      <h2 class="h2" data-i18n-html="coaches.title">Ai sẽ <em>ngồi cùng</em> em?</h2>
+      <p class="coaches__intro" data-i18n="coaches.intro">Em sẽ làm việc riêng với một trong hai chị. Nếu em chưa biết chọn ai, Toàn Vẹn sẽ sắp xếp người phù hợp với câu chuyện của em.</p>
       <div class="glass coaches__panel">
         <div class="coach">
           <img class="photo" src="assets/img/coach-mai-khoi.jpg" width="900" height="845" loading="lazy" alt="Chị Mai Khôi">
           <div class="coach__body">
-            <h3>Chị Mai Khôi</h3>
-            <p class="coach__creds">Nhà sáng lập Toàn Vẹn. Master coach, CPCC.</p>
-            <p class="coach__bio">Gần 30 năm làm coach ở Mỹ và nhiều nước, người phụ nữ châu Á đầu tiên có chứng chỉ CPCC. Chị từng tự mình đi qua đổ vỡ hôn nhân, nên chị hiểu cảm giác đứng giữa giữ và buông.</p>
+            <h3 data-i18n="coaches.c1.name">Chị Mai Khôi</h3>
+            <p class="coach__creds" data-i18n="coaches.c1.creds">Nhà sáng lập Toàn Vẹn. Master coach, CPCC.</p>
+            <p class="coach__bio" data-i18n="coaches.c1.bio">Gần 30 năm làm coach ở Mỹ và nhiều nước, người phụ nữ châu Á đầu tiên có chứng chỉ CPCC. Chị từng tự mình đi qua đổ vỡ hôn nhân, nên chị hiểu cảm giác đứng giữa giữ và buông.</p>
           </div>
         </div>
         <div class="coach">
           <img class="photo" src="assets/img/coach-minh-ngoc.jpg" width="640" height="853" loading="lazy" alt="Chị Minh Ngọc">
           <div class="coach__body">
-            <h3>Chị Minh Ngọc</h3>
-            <p class="coach__creds">Sex coach được chứng nhận đầu tiên tại Việt Nam. ICF PCC.</p>
-            <p class="coach__bio">Chị đang là vợ, là mẹ của một bé nhỏ, và hiểu những điều rất khó nói trong hôn nhân, kể cả chuyện chăn gối.</p>
+            <h3 data-i18n="coaches.c2.name">Chị Minh Ngọc</h3>
+            <p class="coach__creds" data-i18n="coaches.c2.creds">Sex coach được chứng nhận đầu tiên tại Việt Nam. ICF PCC.</p>
+            <p class="coach__bio" data-i18n="coaches.c2.bio">Chị đang là vợ, là mẹ của một bé nhỏ, và hiểu những điều rất khó nói trong hôn nhân, kể cả chuyện chăn gối.</p>
           </div>
         </div>
       </div>
       <figure class="quote">
-        <blockquote>“Nhìn từ bên ngoài, gia đình vẫn có vẻ hoà thuận và ‘ổn’, nhưng cuộc sống hôn nhân lại thiếu tiếng nói chung và tình yêu bị sứt mẻ theo năm tháng, mà chỉ có người trong cuộc mới hiểu. Chị Mai Khôi đã giúp chúng tôi kết thúc cuộc hôn nhân không hạnh phúc thứ nhất và bắt đầu một cuộc hôn nhân mới, với cùng một người.”</blockquote>
-        <figcaption class="label">Dương, khách hàng của chị Mai Khôi</figcaption>
+        <blockquote data-i18n="coaches.quote">“Nhìn từ bên ngoài, gia đình vẫn có vẻ hoà thuận và ‘ổn’, nhưng cuộc sống hôn nhân lại thiếu tiếng nói chung và tình yêu bị sứt mẻ theo năm tháng, mà chỉ có người trong cuộc mới hiểu. Chị Mai Khôi đã giúp chúng tôi kết thúc cuộc hôn nhân không hạnh phúc thứ nhất và bắt đầu một cuộc hôn nhân mới, với cùng một người.”</blockquote>
+        <figcaption class="label" data-i18n="coaches.quote_author">Dương, khách hàng của chị Mai Khôi</figcaption>
       </figure>
     </div>
   </section>
@@ -243,20 +248,20 @@
     <div class="frame__scrim" aria-hidden="true"></div>
     <div class="container">
       <div class="masthead" style="margin-bottom: 48px">
-        <span class="label">Bắt đầu từ đây</span>
+        <span class="label" data-i18n="offer.masthead">Bắt đầu từ đây</span>
         <span class="folio">N°05</span>
       </div>
       <div class="glass offer">
-        <h2 class="h2">Buổi <em>Nhìn Rõ</em></h2>
-        <p class="price">1.500.000đ</p>
+        <h2 class="h2" data-i18n-html="offer.title">Buổi <em>Nhìn Rõ</em></h2>
+        <p class="price" data-i18n="offer.price">1.500.000đ</p>
         <div class="offer__rows rows-top">
-          <p class="row">2 tiếng làm việc riêng với chị Mai Khôi hoặc chị Minh Ngọc</p>
-          <p class="row">Em có thể đi một mình hoặc cùng chồng</p>
-          <p class="row">Ghi chép của chị và bước tiếp theo dành cho em</p>
-          <p class="row">Online, em ngồi ở đâu cũng được, miễn là thấy riêng tư</p>
+          <p class="row" data-i18n="offer.f1">2 tiếng làm việc riêng với chị Mai Khôi hoặc chị Minh Ngọc</p>
+          <p class="row" data-i18n="offer.f2">Em có thể đi một mình hoặc cùng chồng</p>
+          <p class="row" data-i18n="offer.f3">Ghi chép của chị và bước tiếp theo dành cho em</p>
+          <p class="row" data-i18n="offer.f4">Online, em ngồi ở đâu cũng được, miễn là thấy riêng tư</p>
         </div>
-        <a class="btn btn--block" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking">Đặt lịch Buổi Nhìn Rõ</a>
-        <p class="fineprint">Em chuyển khoản qua mã VietQR, Toàn Vẹn sẽ nhắn Zalo trong 24 giờ để hẹn lịch với em.<br>Mỗi tuần chỉ có 01 buổi. Mọi điều em chia sẻ đều được giữ kín.</p>
+        <a class="btn btn--block" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking" data-i18n="offer.cta">Đặt lịch Buổi Nhìn Rõ</a>
+        <p class="fineprint" data-i18n-html="offer.fineprint">Em chuyển khoản qua mã VietQR, Toàn Vẹn sẽ nhắn Zalo trong 24 giờ để hẹn lịch với em.<br>Mỗi tuần chỉ có 01 buổi. Mọi điều em chia sẻ đều được giữ kín.</p>
       </div>
     </div>
   </section>
@@ -264,35 +269,35 @@
   <!-- FAQ -->
   <section class="plain" id="faq">
     <div class="faq">
-      <h2 class="h2 h2--sm">Có thể em đang <em>băn khoăn</em></h2>
+      <h2 class="h2 h2--sm" data-i18n-html="faq.title">Có thể em đang <em>băn khoăn</em></h2>
       <div class="faq__list">
         <details>
-          <summary>Chồng em không chịu đi thì sao?</summary>
-          <p>Em cứ đi một mình. Em chia sẻ phần của em trước, rồi chị sẽ cho em biết những gì nhìn thấy được từ đó.</p>
+          <summary data-i18n="faq.q1">Chồng em không chịu đi thì sao?</summary>
+          <p data-i18n="faq.a1">Em cứ đi một mình. Em chia sẻ phần của em trước, rồi chị sẽ cho em biết những gì nhìn thấy được từ đó.</p>
         </details>
         <details>
-          <summary>Chị có khuyên em cố giữ không?</summary>
-          <p>Không. Nếu cuộc hôn nhân này còn làm lại được, em cần biết. Nếu không, em cũng cần biết.</p>
+          <summary data-i18n="faq.q2">Chị có khuyên em cố giữ không?</summary>
+          <p data-i18n="faq.a2">Không. Nếu cuộc hôn nhân này còn làm lại được, em cần biết. Nếu không, em cũng cần biết.</p>
         </details>
         <details>
-          <summary>Vợ chồng em đi tư vấn rồi mà không ăn thua.</summary>
-          <p>Buổi Nhìn Rõ trả lời một câu hỏi khác: có còn đáng để cố tiếp hay không.</p>
+          <summary data-i18n="faq.q3">Vợ chồng em đi tư vấn rồi mà không ăn thua.</summary>
+          <p data-i18n="faq.a3">Buổi Nhìn Rõ trả lời một câu hỏi khác: có còn đáng để cố tiếp hay không.</p>
         </details>
         <details>
-          <summary>Đây có phải trị liệu tâm lý không?</summary>
-          <p>Đây là coaching. Nếu chị thấy em hoặc chồng em cần trị liệu, chị sẽ nói thẳng và giới thiệu.</p>
+          <summary data-i18n="faq.q4">Đây có phải trị liệu tâm lý không?</summary>
+          <p data-i18n="faq.a4">Đây là coaching. Nếu chị thấy em hoặc chồng em cần trị liệu, chị sẽ nói thẳng và giới thiệu.</p>
         </details>
         <details>
-          <summary>Những gì em chia sẻ có được giữ kín không?</summary>
-          <p>Có. Câu chuyện của em sẽ không xuất hiện ở bất kỳ đâu nếu em không đồng ý bằng văn bản.</p>
+          <summary data-i18n="faq.q5">Những gì em chia sẻ có được giữ kín không?</summary>
+          <p data-i18n="faq.a5">Có. Câu chuyện của em sẽ không xuất hiện ở bất kỳ đâu nếu em không đồng ý bằng văn bản.</p>
         </details>
         <details>
-          <summary>Buổi Nhìn Rõ diễn ra ở đâu?</summary>
-          <p>Online, qua video call. Toàn Vẹn sẽ gửi đường link qua Zalo trước buổi. Em chỉ cần một góc riêng tư, yên tĩnh và một chiếc điện thoại hoặc máy tính.</p>
+          <summary data-i18n="faq.q6">Buổi Nhìn Rõ diễn ra ở đâu?</summary>
+          <p data-i18n="faq.a6">Online, qua video call. Toàn Vẹn sẽ gửi đường link qua Zalo trước buổi. Em chỉ cần một góc riêng tư, yên tĩnh và một chiếc điện thoại hoặc máy tính.</p>
         </details>
         <details>
-          <summary>Em có được chọn coach không?</summary>
-          <p>Có. Em chọn khi đặt lịch, hoặc để Toàn Vẹn sắp xếp người phù hợp với câu chuyện của em.</p>
+          <summary data-i18n="faq.q7">Em có được chọn coach không?</summary>
+          <p data-i18n="faq.a7">Có. Em chọn khi đặt lịch, hoặc để Toàn Vẹn sắp xếp người phù hợp với câu chuyện của em.</p>
         </details>
       </div>
     </div>
@@ -304,8 +309,8 @@
     <div class="frame__scrim" aria-hidden="true"></div>
     <div class="final__inner">
       <img class="sun" src="assets/img/logo-sun.png" width="72" height="72" alt="Biểu tượng mặt trời của Toàn Vẹn">
-      <h2 class="h2">Em chưa cần quyết định hôm nay. <em>Trước hết, cứ chia sẻ đã.</em></h2>
-      <a class="btn" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking">Đặt lịch Buổi Nhìn Rõ</a>
+      <h2 class="h2" data-i18n-html="final.title">Em chưa cần quyết định hôm nay. <em>Trước hết, cứ chia sẻ đã.</em></h2>
+      <a class="btn" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking" data-i18n="final.cta">Đặt lịch Buổi Nhìn Rõ</a>
     </div>
   </section>
 
@@ -327,12 +332,12 @@
         <a href="mailto:toanveninstitute@gmail.com">toanveninstitute@gmail.com</a>
       </div>
     </div>
-    <span class="site-footer__note">Toàn Vẹn đồng hành cùng em bằng coaching về hôn nhân và các mối quan hệ. Coaching không thay thế trị liệu tâm lý hay tư vấn y tế.</span>
+    <span class="site-footer__note" data-i18n="footer.note">Toàn Vẹn đồng hành cùng em bằng coaching về hôn nhân và các mối quan hệ. Coaching không thay thế trị liệu tâm lý hay tư vấn y tế.</span>
   </div>
 </footer>
 
 <div class="sticky-bar" id="sticky-bar" aria-hidden="true">
-  <a class="btn" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking" tabindex="-1">Đặt lịch Buổi Nhìn Rõ</a>
+  <a class="btn" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking" tabindex="-1" data-i18n="sticky.cta">Đặt lịch Buổi Nhìn Rõ</a>
 </div>
 
 <!-- VERTICAL FLOATING CONTACT DOCK -->
@@ -341,24 +346,25 @@
     <span class="dock-btn__icon">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.04 2 11.02c0 2.87 1.5 5.43 3.86 7.07l-.98 3.59a.75.75 0 0 0 .97.91l4.13-1.68c.65.15 1.33.23 2.02.23 5.52 0 10-4.04 10-9.02S17.52 2 12 2z"/></svg>
     </span>
-    <span class="dock-btn__tooltip">Nhắn Zalo OA</span>
+    <span class="dock-btn__tooltip" data-i18n-tooltip="dock.zalo">Nhắn Zalo OA</span>
   </a>
 
   <a class="dock-btn dock-btn--facebook" href="https://www.facebook.com/toitoanven" target="_blank" rel="noopener" aria-label="Nhắn Facebook Toàn Vẹn">
     <span class="dock-btn__icon">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
     </span>
-    <span class="dock-btn__tooltip">Nhắn Facebook</span>
+    <span class="dock-btn__tooltip" data-i18n-tooltip="dock.fb">Nhắn Facebook</span>
   </a>
 
   <a class="dock-btn dock-btn--email" href="mailto:toanveninstitute@gmail.com" aria-label="Gửi email cho Toàn Vẹn">
     <span class="dock-btn__icon">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
     </span>
-    <span class="dock-btn__tooltip">Gửi Email</span>
+    <span class="dock-btn__tooltip" data-i18n-tooltip="dock.email">Gửi Email</span>
   </a>
 </aside>
 
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
