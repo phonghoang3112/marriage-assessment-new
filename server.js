@@ -18,6 +18,10 @@ app.get('/dat-lich', (req, res) => {
   res.sendFile(path.join(__dirname, 'dat-lich.html'));
 });
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running at http://0.0.0.0:${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running at http://0.0.0.0:${PORT}`);
+  });
+}
+
+export default app;
