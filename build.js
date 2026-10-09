@@ -22,4 +22,13 @@ if (fs.existsSync('assets')) {
   fs.cpSync('assets', path.join(dist, 'assets'), { recursive: true });
 }
 
-console.log('Build completed: all static files copied to dist/');
+// Copy server entrypoint and package.json for Vercel Node builder
+if (fs.existsSync('server.js')) {
+  fs.copyFileSync('server.js', path.join(dist, 'server.js'));
+  fs.copyFileSync('server.js', path.join(dist, 'index.js'));
+}
+if (fs.existsSync('package.json')) {
+  fs.copyFileSync('package.json', path.join(dist, 'package.json'));
+}
+
+console.log('Build completed: all static and server files copied to dist/');
