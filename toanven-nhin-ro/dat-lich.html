@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đặt lịch Buổi Nhìn Rõ | Toàn Vẹn</title>
+<meta name="description" content="Đặt lịch Buổi Nhìn Rõ: 2 tiếng online với chị Mai Khôi hoặc chị Minh Ngọc.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2A1A1F">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Meta Pixel: paste the same Pixel base code as index.html here. dat-lich.js fires Lead on form submit. -->
+</head>
+<body>
+
+<div class="frame booking">
+  <div class="frame__bg bg-tea-hands" aria-hidden="true" style="background-position: center 40%"></div>
+  <div class="frame__scrim" aria-hidden="true"></div>
+
+  <header class="booking__top">
+    <a class="link" href="./">Quay lại trang chính</a>
+    <a class="wordmark" href="./" style="font-size: 22px">Toàn Vẹn</a>
+  </header>
+
+  <div class="booking__card">
+    <div class="glass">
+
+      <!-- STEP 1: FORM -->
+      <section class="step" id="step-form">
+        <div class="masthead">
+          <span class="label">2 tiếng · Online</span>
+          <span class="chip chip--amber">1.500.000đ</span>
+        </div>
+        <h1>Đặt lịch Buổi <em>Nhìn Rõ</em></h1>
+        <p class="muted" style="margin: 0 0 28px">Em để lại thông tin để Toàn Vẹn liên hệ nhé. Chỉ mất một phút.</p>
+
+        <form id="booking-form" novalidate>
+          <label class="label field-label" for="ten">Tên em</label>
+          <input class="field" id="ten" name="ten" type="text" placeholder="Tên hoặc tên gọi" autocomplete="given-name" required>
+
+          <label class="label field-label" for="zalo">Số Zalo của em</label>
+          <input class="field" id="zalo" name="zalo" type="tel" inputmode="tel" placeholder="09xx xxx xxx" autocomplete="tel" pattern="[0-9 +.]{9,15}" required>
+
+          <fieldset>
+            <legend class="label">Em muốn làm việc với</legend>
+            <div class="pills">
+              <label class="pill pill--full"><input type="radio" name="coach" value="Toàn Vẹn sắp xếp" checked><span>Toàn Vẹn sắp xếp giúp em</span></label>
+              <label class="pill"><input type="radio" name="coach" value="Chị Mai Khôi"><span>Chị Mai Khôi</span></label>
+              <label class="pill"><input type="radio" name="coach" value="Chị Minh Ngọc"><span>Chị Minh Ngọc</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset style="margin-bottom: 26px">
+            <legend class="label">Em sẽ tham gia</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="tham_gia" value="Một mình" checked><span>Một mình</span></label>
+              <label class="pill"><input type="radio" name="tham_gia" value="Cùng chồng"><span>Cùng chồng</span></label>
+            </div>
+          </fieldset>
+
+          <label class="label field-label" for="chuyen">Em có muốn chia sẻ trước điều gì không? <span style="font-weight: 400; letter-spacing: 0.04em; text-transform: none">(không bắt buộc)</span></label>
+          <textarea class="field" id="chuyen" name="chia_se" rows="4"></textarea>
+
+          <p class="form-error" id="form-error" hidden>Em kiểm tra lại tên và số Zalo giúp Toàn Vẹn nhé.</p>
+          <button class="btn btn--block" type="submit">Tiếp tục thanh toán</button>
+          <p class="muted" style="margin: 16px 0 0; font-size: 14px; text-align: center">Mọi điều em chia sẻ đều được giữ kín.</p>
+        </form>
+      </section>
+
+      <!-- STEP 2: PAYMENT -->
+      <section class="step" id="step-pay" hidden>
+        <div class="masthead">
+          <span class="label">Thanh toán</span>
+          <span class="folio">1.500.000đ</span>
+        </div>
+        <h1 style="margin-bottom: 24px">Còn <em>một bước</em> nữa thôi</h1>
+        <div class="qr" id="qr">[Mã VietQR]</div>
+        <dl class="kv">
+          <div><dt>Ngân hàng</dt><dd id="kv-bank">[Tên ngân hàng]</dd></div>
+          <div><dt>Số tài khoản</dt><dd id="kv-account">[Số tài khoản]</dd></div>
+          <div><dt>Chủ tài khoản</dt><dd id="kv-name">[Tên chủ tài khoản]</dd></div>
+          <div><dt>Số tiền</dt><dd>1.500.000đ</dd></div>
+          <div><dt>Nội dung</dt><dd id="kv-note">NHINRO</dd></div>
+        </dl>
+        <p class="muted" style="margin: 0 0 26px">Sau khi nhận được chuyển khoản, Toàn Vẹn sẽ nhắn Zalo cho em trong vòng 24 giờ để hẹn lịch.</p>
+        <button class="btn btn--block" type="button" id="btn-paid">Em đã chuyển khoản</button>
+        <button class="text-btn" type="button" id="btn-back">Sửa thông tin</button>
+      </section>
+
+      <!-- STEP 3: DONE -->
+      <section class="step" id="step-done" hidden>
+        <h1 id="thanks" style="margin: 8px 0 14px">Cảm ơn em.</h1>
+        <p style="margin: 0 0 28px">Toàn Vẹn đã nhận được thông tin của em. Trong vòng 24 giờ, Toàn Vẹn sẽ nhắn Zalo để hẹn lịch và gửi đường link buổi online cho em. Hẹn gặp em ở Buổi Nhìn Rõ.</p>
+        <a class="btn btn--block btn--ghost" href="./" style="min-height: 56px; font-size: 16px">Về trang chính</a>
+      </section>
+
+    </div>
+    <img class="sun" id="done-sun" src="assets/img/logo-sun.png" width="64" height="64" alt="Biểu tượng mặt trời của Toàn Vẹn" hidden>
+  </div>
+</div>
+
+<script src="assets/js/dat-lich.js"></script>
+</body>
+</html>
