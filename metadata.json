@@ -1,0 +1,8 @@
+{
+  "name": "Buổi Nhìn Rõ | Toàn Vẹn",
+  "description": "2 tiếng online, làm việc riêng với chị Mai Khôi hoặc chị Minh Ngọc, để em biết chuyện gì đang thực sự xảy ra trong cuộc hôn nhân của mình trước khi quyết định giữ hay buông.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -22,14 +22,39 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6ZYBYHN0G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T6ZYBYHN0G');
+</script>
+
 <!-- Meta Pixel: paste the Pixel base code here (replace PIXEL_ID). main.js already fires Contact on Zalo clicks. -->
 </head>
 <body>
 
 <div class="site-header">
   <header class="site-header__inner">
-    <a class="wordmark" href="./">Toàn Vẹn</a>
-    <a class="btn btn--ghost" href="https://zalo.me/SO_ZALO" target="_blank" rel="noopener" data-track="zalo">Nhắn Zalo</a>
+    <a class="wordmark brand-logo" href="./" aria-label="Toàn Vẹn International">
+      <img class="brand-logo__mark" src="assets/img/logo-sun.png" width="36" height="36" alt="Biểu tượng mặt trời Toàn Vẹn">
+      <span class="brand-logo__text">
+        <span class="brand-logo__name">TOÀN VẸN</span>
+        <span class="brand-logo__tag">INTERNATIONAL</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Điều hướng nhanh">
+      <a class="nav-btn" href="#dau-hieu">Những dấu hiệu</a>
+      <a class="nav-btn" href="#buoi">Phiên làm việc</a>
+      <a class="nav-btn" href="#chuyen-gia">Chuyên gia</a>
+      <a class="nav-btn" href="#dat">Chi phí</a>
+      <a class="nav-btn" href="#faq">Hỏi đáp</a>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--sm" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking">Đặt lịch</a>
+    </div>
   </header>
 </div>
 
@@ -56,8 +81,14 @@
             <span class="chip">Đi một mình hoặc cùng chồng</span>
           </div>
           <div class="cta-row">
-            <a class="btn" href="dat-lich.html">Đặt lịch Buổi Nhìn Rõ · 1.500.000đ</a>
-            <a class="link" href="https://zalo.me/SO_ZALO" target="_blank" rel="noopener" data-track="zalo">Em muốn hỏi trước? Nhắn Zalo cho Toàn Vẹn</a>
+            <a class="btn" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking">Đặt lịch Buổi Nhìn Rõ</a>
+            <div class="hero-channels">
+              <a class="link" href="https://zalo.me/1561809299319416611" target="_blank" rel="noopener" data-track="zalo">Nhắn Zalo OA</a>
+              <span class="sep" aria-hidden="true">·</span>
+              <a class="link" href="https://www.facebook.com/toitoanven" target="_blank" rel="noopener">Facebook</a>
+              <span class="sep" aria-hidden="true">·</span>
+              <a class="link" href="mailto:toanveninstitute@gmail.com">Gửi Email</a>
+            </div>
           </div>
         </div>
         <div class="hero__photo">
@@ -128,7 +159,7 @@
       <div class="glass session">
         <div class="session__col">
           <h2 class="h2">2 tiếng để em <em>chia sẻ hết</em></h2>
-          <p class="lead">Em kể câu chuyện của mình, theo cách của em.<br>Coach của em lắng nghe, không phán xét, không bênh ai.<br>Rồi chị hỏi em những câu mà người thân không hỏi được, vì họ quá thương em.</p>
+          <p class="lead">Em kể câu chuyện của mình, theo cách của em.<br>Coach lắng nghe, không phán xét, không bênh ai.<br>Rồi chị hỏi em những câu mà người thân không hỏi được, vì họ quá thương em.</p>
           <p class="serif-line">Khi đang ở trong nỗi đau, rất khó để tự mình nhìn rõ. Em cần một người đứng ngoài.</p>
         </div>
         <div class="session__col">
@@ -171,7 +202,7 @@
   </section>
 
   <!-- N°04 COACHES -->
-  <section class="frame coaches">
+  <section class="frame coaches" id="chuyen-gia">
     <div class="frame__bg bg-conversation" aria-hidden="true"></div>
     <div class="frame__scrim" aria-hidden="true"></div>
     <div class="container">
@@ -224,14 +255,14 @@
           <p class="row">Ghi chép của chị và bước tiếp theo dành cho em</p>
           <p class="row">Online, em ngồi ở đâu cũng được, miễn là thấy riêng tư</p>
         </div>
-        <a class="btn btn--block" href="dat-lich.html">Đặt lịch Buổi Nhìn Rõ</a>
-        <p class="fineprint">Em chuyển khoản qua mã VietQR, Toàn Vẹn sẽ nhắn Zalo trong 24 giờ để hẹn lịch với em.<br>Mỗi tuần chỉ có [X] buổi. Mọi điều em chia sẻ đều được giữ kín.</p>
+        <a class="btn btn--block" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking">Đặt lịch Buổi Nhìn Rõ</a>
+        <p class="fineprint">Em chuyển khoản qua mã VietQR, Toàn Vẹn sẽ nhắn Zalo trong 24 giờ để hẹn lịch với em.<br>Mỗi tuần chỉ có 01 buổi. Mọi điều em chia sẻ đều được giữ kín.</p>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="plain">
+  <section class="plain" id="faq">
     <div class="faq">
       <h2 class="h2 h2--sm">Có thể em đang <em>băn khoăn</em></h2>
       <div class="faq__list">
@@ -273,9 +304,8 @@
     <div class="frame__scrim" aria-hidden="true"></div>
     <div class="final__inner">
       <img class="sun" src="assets/img/logo-sun.png" width="72" height="72" alt="Biểu tượng mặt trời của Toàn Vẹn">
-      <h2 class="h2">Em chưa cần quyết định gì hôm nay. <em>Trước hết, cứ chia sẻ đã.</em></h2>
-      <a class="btn" href="dat-lich.html">Đặt lịch Buổi Nhìn Rõ · 1.500.000đ</a>
-      <p>Còn điều gì băn khoăn, em <a href="https://zalo.me/SO_ZALO" target="_blank" rel="noopener" data-track="zalo">nhắn Zalo cho Toàn Vẹn</a> biết nhé.</p>
+      <h2 class="h2">Em chưa cần quyết định hôm nay. <em>Trước hết, cứ chia sẻ đã.</em></h2>
+      <a class="btn" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking">Đặt lịch Buổi Nhìn Rõ</a>
     </div>
   </section>
 
@@ -283,14 +313,51 @@
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <span class="site-footer__brand">Toàn Vẹn Institute</span>
+    <div class="site-footer__left">
+      <a class="site-footer__brand brand-logo" href="./" aria-label="Toàn Vẹn International">
+        <img class="brand-logo__mark" src="assets/img/logo-sun.png" width="36" height="36" alt="Biểu tượng mặt trời Toàn Vẹn">
+        <span class="brand-logo__text">
+          <span class="brand-logo__name">TOÀN VẸN</span>
+          <span class="brand-logo__tag">INTERNATIONAL</span>
+        </span>
+      </a>
+      <div class="site-footer__links">
+        <a href="https://zalo.me/1561809299319416611" target="_blank" rel="noopener" data-track="zalo">Zalo OA</a>
+        <a href="https://www.facebook.com/toitoanven" target="_blank" rel="noopener">Facebook: @toitoanven</a>
+        <a href="mailto:toanveninstitute@gmail.com">toanveninstitute@gmail.com</a>
+      </div>
+    </div>
     <span class="site-footer__note">Toàn Vẹn đồng hành cùng em bằng coaching về hôn nhân và các mối quan hệ. Coaching không thay thế trị liệu tâm lý hay tư vấn y tế.</span>
   </div>
 </footer>
 
 <div class="sticky-bar" id="sticky-bar" aria-hidden="true">
-  <a class="btn" href="dat-lich.html" tabindex="-1">Đặt lịch Buổi Nhìn Rõ · 1.500.000đ</a>
+  <a class="btn" href="https://toitoanven.fillout.com/goi_ten_60" target="_blank" rel="noopener" data-track="booking" tabindex="-1">Đặt lịch Buổi Nhìn Rõ</a>
 </div>
+
+<!-- VERTICAL FLOATING CONTACT DOCK -->
+<aside class="floating-dock" aria-label="Kênh liên hệ nhanh Toàn Vẹn">
+  <a class="dock-btn dock-btn--zalo" href="https://zalo.me/1561809299319416611" target="_blank" rel="noopener" data-track="zalo" aria-label="Nhắn Zalo OA Toàn Vẹn">
+    <span class="dock-btn__icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.04 2 11.02c0 2.87 1.5 5.43 3.86 7.07l-.98 3.59a.75.75 0 0 0 .97.91l4.13-1.68c.65.15 1.33.23 2.02.23 5.52 0 10-4.04 10-9.02S17.52 2 12 2z"/></svg>
+    </span>
+    <span class="dock-btn__tooltip">Nhắn Zalo OA</span>
+  </a>
+
+  <a class="dock-btn dock-btn--facebook" href="https://www.facebook.com/toitoanven" target="_blank" rel="noopener" aria-label="Nhắn Facebook Toàn Vẹn">
+    <span class="dock-btn__icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </span>
+    <span class="dock-btn__tooltip">Nhắn Facebook</span>
+  </a>
+
+  <a class="dock-btn dock-btn--email" href="mailto:toanveninstitute@gmail.com" aria-label="Gửi email cho Toàn Vẹn">
+    <span class="dock-btn__icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+    </span>
+    <span class="dock-btn__tooltip">Gửi Email</span>
+  </a>
+</aside>
 
 <script src="assets/js/main.js"></script>
 </body>

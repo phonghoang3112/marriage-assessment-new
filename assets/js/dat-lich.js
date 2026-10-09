@@ -41,8 +41,16 @@ var CONFIG = {
   }
 
   function track(event, custom) {
-    if (typeof window.fbq !== 'function') return;
-    if (custom) window.fbq('trackCustom', event); else window.fbq('track', event);
+    if (typeof window.fbq === 'function') {
+      if (custom) window.fbq('trackCustom', event); else window.fbq('track', event);
+    }
+    if (typeof window.gtag === 'function') {
+      if (event === 'Lead') {
+        window.gtag('event', 'generate_lead', { currency: 'VND', value: CONFIG.PRICE });
+      } else if (event === 'DaChuyenKhoan') {
+        window.gtag('event', 'purchase', { currency: 'VND', value: CONFIG.PRICE });
+      }
+    }
   }
 
   function fillPayment() {

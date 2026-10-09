@@ -14,6 +14,16 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6ZYBYHN0G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T6ZYBYHN0G');
+</script>
+
 <!-- Meta Pixel: paste the same Pixel base code as index.html here. dat-lich.js fires Lead on form submit. -->
 </head>
 <body>
@@ -24,7 +34,13 @@
 
   <header class="booking__top">
     <a class="link" href="./">Quay lại trang chính</a>
-    <a class="wordmark" href="./" style="font-size: 22px">Toàn Vẹn</a>
+    <a class="brand-logo" href="./" aria-label="Toàn Vẹn International">
+      <img class="brand-logo__mark" src="assets/img/logo-sun.png" width="30" height="30" alt="Toàn Vẹn logo">
+      <span class="brand-logo__text">
+        <span class="brand-logo__name" style="font-size: 13px">TOÀN VẸN</span>
+        <span class="brand-logo__tag" style="font-size: 7.5px">INTERNATIONAL</span>
+      </span>
+    </a>
   </header>
 
   <div class="booking__card">
