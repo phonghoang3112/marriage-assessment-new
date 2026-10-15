@@ -20,7 +20,7 @@
 
   // Active section indicator in fixed header navigation
   var navButtons = Array.prototype.slice.call(document.querySelectorAll('.site-nav .nav-btn'));
-  var sections = ['dau-hieu', 'buoi', 'chuyen-gia', 'dat', 'faq'].map(function (id) {
+  var sections = ['dau-hieu', 'buoi', 'chuyen-gia', 'chia-se', 'dat', 'faq'].map(function (id) {
     return document.getElementById(id);
   }).filter(Boolean);
 
@@ -43,6 +43,58 @@
     };
     window.addEventListener('scroll', updateActiveNav, { passive: true });
     updateActiveNav();
+  }
+
+  // Lightbox Modal for Feedback & Client Share Screenshots
+  var lightbox = document.getElementById('lightbox-modal');
+  var lightboxImg = document.getElementById('lightbox-img');
+  var lightboxClose = document.getElementById('lightbox-close');
+
+  if (lightbox && lightboxImg) {
+    var openLightbox = function (src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || 'Ảnh phóng to';
+      lightbox.removeAttribute('hidden');
+      requestAnimationFrame(function () {
+        lightbox.classList.add('is-active');
+      });
+      document.body.style.overflow = 'hidden';
+    };
+
+    var closeLightbox = function () {
+      lightbox.classList.remove('is-active');
+      setTimeout(function () {
+        lightbox.setAttribute('hidden', '');
+        lightboxImg.src = '';
+      }, 250);
+      document.body.style.overflow = '';
+    };
+
+    document.querySelectorAll('[data-zoom]').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        var src = el.getAttribute('data-zoom');
+        var innerImg = el.querySelector('img');
+        var alt = innerImg ? innerImg.alt : '';
+        if (src) openLightbox(src, alt);
+      });
+    });
+
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', closeLightbox);
+    }
+
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !lightbox.hasAttribute('hidden')) {
+        closeLightbox();
+      }
+    });
   }
 
   // Meta Pixel & Google Analytics: count Zalo clicks as Contact.

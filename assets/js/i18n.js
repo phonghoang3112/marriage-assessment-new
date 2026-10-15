@@ -9,6 +9,7 @@
       "nav.signs": "Những dấu hiệu",
       "nav.session": "Phiên làm việc",
       "nav.coaches": "Chuyên gia",
+      "nav.shares": "Chia sẻ",
       "nav.pricing": "Chi phí",
       "nav.faq": "Hỏi đáp",
       "nav.book": "Đặt lịch",
@@ -77,6 +78,18 @@
       "coaches.c2.bio": "Chị đang là vợ, là mẹ của một bé nhỏ, và hiểu những điều rất khó nói trong hôn nhân, kể cả chuyện chăn gối.",
       "coaches.quote": "“Nhìn từ bên ngoài, gia đình vẫn có vẻ hoà thuận và ‘ổn’, nhưng cuộc sống hôn nhân lại thiếu tiếng nói chung và tình yêu bị sứt mẻ theo năm tháng, mà chỉ có người trong cuộc mới hiểu. Chị Mai Khôi đã giúp chúng tôi kết thúc cuộc hôn nhân không hạnh phúc thứ nhất và bắt đầu một cuộc hôn nhân mới, với cùng một người.”",
       "coaches.quote_author": "Dương, khách hàng của chị Mai Khôi",
+      "coaches.ngoc_feedback_label": "Phản hồi từ khách hàng gửi chị Minh Ngọc",
+
+      // Client Shares
+      "shares.masthead": "Lắng nghe người trong cuộc",
+      "shares.title": "Khách hàng của Toàn Vẹn <em>chia sẻ</em>",
+      "shares.intro": "Những dòng tin nhắn mộc mạc sau 2 tiếng nhìn rõ — nơi cảm xúc được tháo gỡ và hướng đi dần sáng tỏ.",
+      "shares.c1_tag": "Tâm sự sau buổi 1-1",
+      "shares.c1_quote": "“Qua những lấn cấn ban đầu, chị đã cảm thấy thoải mái hơn khi chia sẻ, thấy muốn nói, và thấy sẵn sàng hơn với những gì mình cần phải làm trước khi rời đi. Cám ơn em!”",
+      "shares.c1_note": "— Khách hàng cảm thấy nhẹ lòng và định hình được bước đi cho bản thân",
+      "shares.c2_tag": "Nhận thức mới",
+      "shares.c2_quote": "“Điều đầu tiên mình nhận ra là không hẳn bạn trai mình không thương mình, mà là mình đã kỳ vọng bạn làm chính xác điều mình mong muốn quá. Mình đã không thực sự hiểu nhu cầu của bạn mà chỉ chú ý vào mình.”",
+      "shares.c2_note": "— Khách hàng thấu hiểu góc nhìn của đối phương để hàn gắn",
 
       // Offer
       "offer.masthead": "Bắt đầu từ đây",
@@ -130,6 +143,7 @@
       "nav.signs": "Signs",
       "nav.session": "The Session",
       "nav.coaches": "Coaches",
+      "nav.shares": "Stories",
       "nav.pricing": "Pricing",
       "nav.faq": "FAQ",
       "nav.book": "Book a Session",
@@ -198,6 +212,18 @@
       "coaches.c2.bio": "A devoted wife and mother of a young child, she empathetically addresses the most vulnerable topics in marriage, including emotional and physical intimacy.",
       "coaches.quote": "“From the outside, our family seemed peaceful and ‘fine,’ but our marriage lacked genuine connection and love had worn thin over the years—something only those inside could truly know. Coach Mai Khôi helped us end our first unhappy marriage and begin a completely new, loving marriage—with the very same person.”",
       "coaches.quote_author": "Dương, client of Coach Mai Khôi",
+      "coaches.ngoc_feedback_label": "Direct message from a client to Coach Minh Ngọc",
+
+      // Client Shares
+      "shares.masthead": "Real Voices",
+      "shares.title": "What Our Clients <em>Share</em>",
+      "shares.intro": "Genuine reflections sent after 2 hours of private dialogue—where unspoken emotions are acknowledged and a clear way forward begins to emerge.",
+      "shares.c1_tag": "Reflections after 1-on-1 session",
+      "shares.c1_quote": "“After initial hesitations, I felt much more at ease opening up, wanting to speak, and feeling ready for what I need to do before moving forward. Thank you!”",
+      "shares.c1_note": "— A client finding inner peace and clarity on her next steps",
+      "shares.c2_tag": "A fresh realization",
+      "shares.c2_quote": "“The first thing I realized was not that he didn't care about me, but that I had expected him to do exactly what I wanted. I didn't truly understand his needs, focusing only on my own.”",
+      "shares.c2_note": "— Gaining empathy for her partner's perspective to heal the relationship",
 
       // Offer
       "offer.masthead": "Begin Here",
