@@ -123,6 +123,7 @@ button, input, textarea { font: inherit; }
 .bg-women-tea { background-image: url('../img/bg-women-tea.jpg'); }
 .bg-conversation { background-image: url('../img/bg-conversation.jpg'); }
 .bg-tea-hands-soft { background-image: url('../img/bg-tea-hands-soft.jpg'); }
+.bg-anh-1 { background-image: url('../img/anh-1.jpg'); }
 
 .plain { padding: 96px var(--gutter); background: var(--ground); }
 
@@ -810,14 +811,29 @@ button, input, textarea { font: inherit; }
 
 /* ---------- Final ---------- */
 .final { padding: 120px var(--gutter); text-align: center; }
-.final .frame__scrim { background: linear-gradient(180deg, rgba(42, 26, 31, 0.62) 0%, rgba(42, 26, 31, 0.82) 100%); }
+.final .frame__bg {
+  background-position: center 30%;
+  filter: blur(5px);
+  transform: scale(1.06);
+}
+.final .frame__scrim { background: linear-gradient(180deg, rgba(42, 26, 31, 0.65) 0%, rgba(42, 26, 31, 0.84) 100%); }
 .final__inner { position: relative; max-width: 760px; margin: 0 auto; }
 .final .sun { width: 72px; height: 72px; margin: 0 auto 32px; }
 .final .h2 { margin-bottom: 36px; font-size: clamp(34px, 4.8vw, 58px); }
 .final p { margin: 24px 0 0; font-size: 15px; color: var(--muted); }
 
 /* ---------- Footer ---------- */
-.site-footer { padding: 40px var(--gutter) 116px; border-top: 1.5px solid rgba(255, 248, 240, 0.12); font-size: 14px; line-height: 1.6; color: var(--muted); }
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  padding: 44px var(--gutter) 116px;
+  border-top: 1.5px solid rgba(255, 248, 240, 0.14);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  background: linear-gradient(180deg, rgba(42, 26, 31, 0.92) 0%, rgba(26, 14, 18, 0.98) 100%),
+              url('../img/anh-1.jpg') center bottom / cover no-repeat;
+}
 .site-footer__inner { max-width: var(--max); margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 24px 32px; }
 .site-footer__left { display: flex; flex-direction: column; gap: 10px; }
 .site-footer__brand { font-family: var(--font-display); font-weight: 300; font-size: 20px; color: var(--ink); }
